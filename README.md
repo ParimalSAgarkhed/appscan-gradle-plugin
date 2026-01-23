@@ -1,10 +1,16 @@
 # HCL AppScan Gradle Plugin
 
-Harness the power of static application security testing with HCL AppScan on Cloud, a SaaS solution for eliminating application vulnerabilities before deployment and HCL AppScan 360°, a cloud-native, self-managed platform also used for vulnerability elimination. Both solutions integrate directly into the SDLC, providing static, dynamic and open-source testing.
+Harness the power of Static Application Security Testing (SAST) with HCL AppScan on Cloud, a SaaS solution, to eliminate application vulnerabilities before deployment.
+You can also use HCL AppScan 360°, a cloud-native, self-managed platform, for vulnerability elimination. Both solutions integrate directly into the SDLC and provide
+static, dynamic, and open-source testing.
 
-You can submit static and open source scans directly from the HCL AppScan Gradle plugin or use it to generate an IRX file for later submission to the service. The results are ready quickly (90% are ready in less than one hour), having been honed by Intelligent Finding Analytics, which uses HCL's Artificial Intelligence capabilities to greatly reduce false positives and other noise by an average of more than 98%. IFA also displays optimal locations for developers to fix multiple vulnerabilities in the code. Click [here](https://securityintelligence.com/intelligent-finding-analytics-cognitive-computing-application-security-expert/) for more information.
+You can submit static and open-source scans directly from the HCL AppScan Gradle plug-in, or use it to generate an IRX file to submit to the service later. Results are
+ready quickly (90% are ready in less than one hour) and are honed by Intelligent Finding Analytics (IFA). IFA uses HCL&#39;s AI capabilities to reduce false positives and
+other noise by an average of more than 98%. IFA also displays optimal locations for developers to fix multiple vulnerabilities in the code.[Learn more about Intelligent
+Finding Analytics](https://www.hcl-software.com/blog/appscan/intelligent-finding-analytics-your-cognitive-computing-application-security-expert).
 
-Not yet an AppScan on Cloud or AppScan 360° customer? Click [here](https://cloud.appscan.com/) for a free trial of Application Security on Cloud or click [here](https://www.hcl-software.com/appscan/products/appscan360/contact) for a free trial of AppScan 360° to use with this plugin. 
+Not yet an AppScan on Cloud or AppScan 360° customer? Get a free trial of Application Security on Cloud, or get a free trial of AppScan 360° to use with this
+plug-in. 
 
 # Prerequisites:
 
