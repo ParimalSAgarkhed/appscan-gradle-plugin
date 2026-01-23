@@ -9,19 +9,18 @@ ready quickly (90% are ready in less than one hour) and are honed by Intelligent
 other noise by an average of more than 98%. IFA also displays optimal locations for developers to fix multiple vulnerabilities in the code.[Learn more about Intelligent
 Finding Analytics](https://www.hcl-software.com/blog/appscan/intelligent-finding-analytics-your-cognitive-computing-application-security-expert).
 
-Not yet an AppScan on Cloud or AppScan 360° customer? Get a free trial of Application Security on Cloud, or get a free trial of AppScan 360° to use with this
-plug-in. 
+Not yet an AppScan on Cloud or AppScan 360° customer? [Get a free trial of Application Security on Cloud](https://cloud.appscan.com/), or [get a free trial of AppScan 360°](https://www.hcl-software.com/appscan/products/appscan360/contact) to use with this plug-in. 
 
 # Prerequisites:
 
 - An account on the [HCL AppScan on Cloud](https://cloud.appscan.com/) service. You'll need to [create an application](https://help.hcltechsw.com/appscan/ASoC/ent_create_application.html) on the service to associate your scans with.
-- To execute scans in HCL AppScan 360°, you must have access to an instance of the same. To learn more about HCL AppScan 360° features and installation, click [here](https://help.hcl-software.com/appscan/360/2.0.0/home.html).
+- Access to an instance of HCL AppScan 360° to execute scans in that environment. [Learn more about AppScan 360° features and installation](https://help.hcl-software.com/appscan/360/2.0.0/home.html).
  
 # Usage:
 
-Usage information and the latest version can be found on the [plugin page](https://plugins.gradle.org/plugin/com.hcl.security.appscan) in the Gradle plugins repository.
+You can find usage information and the latest version on the [plug-in page](https://plugins.gradle.org/plugin/com.hcl.security.appscan) in the Gradle plugins repository.
 
-To use the plugin, add the following lines to build.gradle, replacing \<version\> with the desired version of the plugin:
+To use the plug-in, add the following lines to _build.gradle_, and replace <version> with the version of the plug-in you want to use.
 
 For Gradle 2.1 and later:
 
@@ -46,7 +45,7 @@ For older Gradle versions:
 	Generates an IRX file for all Java and WAR projects in the build. The IRX file will be generated in the root project's "build" directory by default.
 
 - appscan-analyze:
-  Generates an IRX file and submits it to the AppScan on Cloud service or AppScan 360° for analysis. This task requires an api key, secret, and application id (serviceUrl and acceptssl are additional parameters needed for AppScan 360°).
+  Generates an IRX file for all jar, war, and ear projects in the build and submits it to the HCL AppScan on Cloud service or AppScan 360° for analysis. This task requires an API key, secret, and application ID. Additional parameters serviceUrl and acceptssl are needed for AppScan 360°. The IRX file will be generated in the root project's "target" directory by default.
   
 # Configurable Options:
 
@@ -81,7 +80,7 @@ The appscanKey and appscanSecret options can be specified in the user's gradle.p
 	appscanKey="2358cd02-3fs3-322c-62c9-b5cc63c61f2a"
 	appscanSecret="qU939siTXgF7csk3jSig+Vza7ilWLu/Uy/ReWye5E/c="
 
-You can generate an API key id/secret for AppScan On Cloud [here](https://cloud.appscan.com/main/apikey). Refer [here](https://help.hcl-software.com/appscan/360/2.0.0/appseccloud_generate_api_key_cm.html) to know how to generate them for AppScan 360°.
+[Generate an API key ID/secret for AppScan On Cloud](https://cloud.appscan.com/main/apikey). [Learn how to generate them for AppScan 360°](https://help.hcl-software.com/appscan/360/2.0.0/appseccloud_generate_api_key_cm.html).
 
 To only scan source code, use the -DsourceCodeOnly option on the command line. For example:
 
