@@ -20,7 +20,7 @@ Not yet an AppScan on Cloud or AppScan 360° customer? [Get a free trial of Appl
 
 You can find usage information and the latest version on the [plug-in page](https://plugins.gradle.org/plugin/com.hcl.security.appscan) in the Gradle plugins repository.
 
-To use the plug-in, add the following lines to _build.gradle_, and replace <version> with the version of the plug-in you want to use.
+To use the plug-in, add the following lines to _build.gradle_, and replace \<version\> with the version of the plug-in you want to use.
 
 For Gradle 2.1 and later:
 
