@@ -42,10 +42,10 @@ For older Gradle versions:
 # Tasks:
 
 - appscan-prepare:
-	Generates an IRX file for all Java and WAR projects in the build. The IRX file will be generated in the root project's "build" directory by default.
+	Generates an IRX file for all Java and WAR projects in the build. By default, the task generates the IRX file in the root project's "build" directory.
 
 - appscan-analyze:
-  Generates an IRX file for all jar, war, and ear projects in the build and submits it to the HCL AppScan on Cloud service or AppScan 360° for analysis. This task requires an API key, secret, and application ID. Additional parameter serviceUrl is needed for AppScan 360°. The IRX file will be generated in the root project's "target" directory by default.
+  Generates an IRX file and submits it to the AppScan on Cloud service or AppScan 360° for analysis. This task requires an API key, secret, and application ID. (serviceUrl is an additional parameter needed for AppScan 360°.)
   
 # Configurable Options:
 
@@ -64,25 +64,25 @@ For older Gradle versions:
 	serviceUrl		null					      REQUIRED for AppScan 360 and not applicable to AppScan on Cloud.
 	acceptssl		false					      Ignore untrusted certificates when connecting to AppScan 360°, and not applicable to AppScan on Cloud.
 
-All options can be set through JVM parameters on the command line using the syntax -Doption=value. For example:
+You can set all options through JVM parameters on the command line using the syntax -Doption=value.For example:
 
 	gradle appscan-prepare -DirxName=MyApp
 
-All options can also be set using an "appscanSettings" block in the build script. For example:
+You can also set all options using an appscanSettings block in the build script. For example:
 
 	appscanSettings {
 		irxName="MyApp"
 		irxDir="/myApplication/sample"
 	}
 
-The appscanKey and appscanSecret options can be specified in the user's gradle.properties file. This avoids the need to specify authentication information in the build script or command line. For example, add the following lines to ~/.gradle/gradle.properties (create the file if it doesn't exist):
+You can specify the appscanKey and appscanSecret options in the user's gradle.properties file. This avoids the need to specify authentication information in the build script or command line. For example, add the following lines to ~/.gradle/gradle.properties (create the file if it doesn't exist):
 
 	appscanKey="2358cd02-3fs3-322c-62c9-b5cc63c61f2a"
 	appscanSecret="qU939siTXgF7csk3jSig+Vza7ilWLu/Uy/ReWye5E/c="
 
 [Generate an API key ID/secret for AppScan On Cloud](https://cloud.appscan.com/main/apikey). [Learn how to generate them for AppScan 360°](https://help.hcl-software.com/appscan/360/2.0.0/appseccloud_generate_api_key_cm.html).
 
-To only scan source code, use the -DsourceCodeOnly option on the command line. For example:
+To scan only source code, use the -DsourceCodeOnly option on the command line. For example:
 
 	gradle appscan-prepare -DsourceCodeOnly
 
