@@ -6,7 +6,7 @@ static, dynamic, and open-source testing.
 
 You can submit static and open-source scans directly from the HCL AppScan Gradle plug-in, or use it to generate an IRX file to submit to the service later. Results are
 ready quickly (90% are ready in less than one hour) and are honed by Intelligent Finding Analytics (IFA). IFA uses HCL's AI capabilities to reduce false positives and
-other noise by an average of more than 98%. IFA also displays optimal locations for developers to fix multiple vulnerabilities in the code.[Learn more about Intelligent
+other noise by an average of more than 98%. IFA also displays optimal locations for developers to fix multiple vulnerabilities in the code. [Learn more about Intelligent
 Finding Analytics](https://www.hcl-software.com/blog/appscan/intelligent-finding-analytics-your-cognitive-computing-application-security-expert).
 
 Not yet an AppScan on Cloud or AppScan 360° customer? [Get a free trial of Application Security on Cloud](https://cloud.appscan.com/), or [get a free trial of AppScan 360°](https://www.hcl-software.com/appscan/products/appscan360/contact) to use with this plug-in. 
