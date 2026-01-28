@@ -9,7 +9,7 @@ ready quickly (90% are ready in less than one hour) and are honed by Intelligent
 other noise by an average of more than 98%. IFA also displays optimal locations for developers to fix multiple vulnerabilities in the code. [Learn more about Intelligent
 Finding Analytics](https://www.hcl-software.com/blog/appscan/intelligent-finding-analytics-your-cognitive-computing-application-security-expert).
 
-Not yet an AppScan on Cloud or AppScan 360° customer? [Get a free trial of Application Security on Cloud](https://cloud.appscan.com/), or [get a free trial of AppScan 360°](https://www.hcl-software.com/appscan/products/appscan360/contact) to use with this plug-in. 
+Not yet an AppScan on Cloud or AppScan 360° customer? [Get a free trial of AppScan on Cloud](https://cloud.appscan.com/), or [get a free trial of AppScan 360°](https://www.hcl-software.com/appscan/products/appscan360/contact) to use with this plug-in. 
 
 # Prerequisites:
 
@@ -61,7 +61,7 @@ For older Gradle versions:
 	staticAnalysisOnly	false					      				  Only run static analysis. Do not run software composition analysis (SCA).
  	jspCompiler     	Default Tomcat JSP Compiler                   The JSP compiler path.
 	thirdParty		    false					      				  Include known third party packages in static analysis (not recommended).
-	serviceUrl		    null					      				  Required for AppScan 360° and not applicable to AppScan on Cloud.
+	serviceUrl		    null					      				  Required for AppScan 360°.
 	acceptssl		    false					      				  Ignore untrusted certificates when connecting to AppScan 360°, and not applicable to AppScan on Cloud.
 
 You can set all options through JVM parameters on the command line using the syntax -Doption=value. For example:
