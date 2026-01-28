@@ -5,7 +5,7 @@ You can also use HCL AppScan 360°, a cloud-native, self-managed platform, for v
 static, dynamic, and open-source testing.
 
 You can submit static and open-source scans directly from the HCL AppScan Gradle plug-in, or use it to generate an IRX file to submit to the service later. Results are
-ready quickly (90% are ready in less than one hour) and are honed by Intelligent Finding Analytics (IFA). IFA uses HCL&#39;s AI capabilities to reduce false positives and
+ready quickly (90% are ready in less than one hour) and are honed by Intelligent Finding Analytics (IFA). IFA uses HCL's AI capabilities to reduce false positives and
 other noise by an average of more than 98%. IFA also displays optimal locations for developers to fix multiple vulnerabilities in the code.[Learn more about Intelligent
 Finding Analytics](https://www.hcl-software.com/blog/appscan/intelligent-finding-analytics-your-cognitive-computing-application-security-expert).
 
@@ -45,7 +45,7 @@ For older Gradle versions:
 	Generates an IRX file for all Java and WAR projects in the build. The IRX file will be generated in the root project's "build" directory by default.
 
 - appscan-analyze:
-  Generates an IRX file for all jar, war, and ear projects in the build and submits it to the HCL AppScan on Cloud service or AppScan 360° for analysis. This task requires an API key, secret, and application ID. Additional parameters serviceUrl and acceptssl are needed for AppScan 360°. The IRX file will be generated in the root project's "target" directory by default.
+  Generates an IRX file for all jar, war, and ear projects in the build and submits it to the HCL AppScan on Cloud service or AppScan 360° for analysis. This task requires an API key, secret, and application ID. Additional parameter serviceUrl is needed for AppScan 360°. The IRX file will be generated in the root project's "target" directory by default.
   
 # Configurable Options:
 
@@ -55,7 +55,7 @@ For older Gradle versions:
 	appId             	null - Required for 'appscan-analyze'         The id of the application in the cloud service.
 	appscanKey        	null - Required for 'appscan-analyze'         The user's API key id for authentication.
 	appscanSecret     	null - Required for 'appscan-analyze'         The user's API key secret for authentication.
-	namespaces	  	null					      Override automatic namespace detection. Set to "" to disable namespace detection.
+	namespaces	  	    null					      Override automatic namespace detection. Set to "" to disable namespace detection.
     sourceCodeOnly    	false					      If set to true, only scan source code.
     openSourceOnly	  	false					      Only run software composition analysis (SCA). Do not run static analysis.
 	staticAnalysisOnly	false					      Only run static analysis. Do not run software composition analysis (SCA).
