@@ -45,7 +45,7 @@ For older Gradle versions:
 	Generates an IRX file for all Java and WAR projects in the build. By default, the task generates the IRX file in the root project's "build" directory.
 
 - appscan-analyze:
-  Generates an IRX file and submits it to the AppScan on Cloud service or AppScan 360° for analysis. This task requires an API key, secret, and application ID. (serviceUrl is an additional parameter needed for AppScan 360°.)
+  Generates an IRX file and submits it to the AppScan on Cloud service or AppScan 360° for analysis. This task requires an API key, secret, and application ID. serviceUrl is an additional parameter needed for AppScan 360°.
   
 # Configurable Options:
 
@@ -61,7 +61,7 @@ For older Gradle versions:
 	staticAnalysisOnly	false					      Only run static analysis. Do not run software composition analysis (SCA).
  	jspCompiler     	Default Tomcat JSP Compiler                   The JSP compiler path.
 	thirdParty		false					      Include known third party packages in static analysis (not recommended).
-	serviceUrl		null					      REQUIRED for AppScan 360 and not applicable to AppScan on Cloud.
+	serviceUrl		null					      REQUIRED for AppScan 360° and not applicable to AppScan on Cloud.
 	acceptssl		false					      Ignore untrusted certificates when connecting to AppScan 360°, and not applicable to AppScan on Cloud.
 
 You can set all options through JVM parameters on the command line using the syntax -Doption=value.For example:
